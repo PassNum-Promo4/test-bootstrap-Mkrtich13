@@ -5,14 +5,16 @@
     <!-- Obligatoire -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Bootstrap</title>
-    <!-- Lien vers fichier boostrap héberger sur serveur -->
+    <!-- Lien vers fichier boostrap héberger sur un serveur -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-  <!-- Le body en row pour permettre au deux élément de se mettre l'un à coté de l'autre sur la grille avec col-md-4 et col-md-8 -->
+  <!-- Le body en row pour permettre au deux éléments de se mettrent l'un à coté de l'autre sur la grille avec col-md-4 et col-md-8 -->
   <body class="row">
     <!-- bg-dark pour mettre l'arrière plan en gris sombre -->
     <div class="bg-dark col-md-4">
+      <!-- row et mx-auto pour centrer l'élément avec rounded-circle pour arrondir l'image -->
       <img class="row mx-auto rounded-circle p-5" src="http://fakeimg.pl/150/" alt="fakeimage">
+      <!-- text-left pour aligner le texte sur la gauche et text-light et text-bold pour mettre en plan et en gras, p-3 pour mettre du padding -->
       <p class="text-left text-light font-weight-bold p-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,
@@ -21,10 +23,12 @@
         orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
         Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
       </p>
+      <!-- btn pour mettre en forme le bouton et btn-success et btn-danger pour mettre le fond approprié -->
       <button class="btn btn-success justify-content-around" type="button">Oui</button>
       <button class="btn btn-danger justify-content-around" type="button">Non</button>
     </div>
 
+    <!-- card pour mettre les éléments dans un conteneur flexible et extensible -->
     <div class="card col-md-8">
       <div>
         <h1>Lorem Ipsum</h1>
@@ -32,9 +36,11 @@
         Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
         <a class="btn btn-info"href="#">Super</a>
       </div>
+      <!-- mt-3 pour mettre du margin-top, bg-light pour mettre une couleur légérement grise en fond -->
       <div class="mt-3 border bg-light card-body row">
         <div class="col-lg-6 p-5">
           <img class="row mx-auto" src="http://fakeimg.pl/300/" alt="fakeimg">
+          <!-- p-3 pour mettre du padding -->
           <p class="card-text font-weight-bold p-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus,

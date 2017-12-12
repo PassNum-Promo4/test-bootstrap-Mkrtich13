@@ -10,8 +10,8 @@
 
   <!-- Le body en row pour permettre au deux éléments de se mettrent l'un à coté de l'autre sur la grille avec col-md-4 et col-md-8 -->
   <body class="row">
-    <!-- bg-dark pour mettre l'arrière plan en gris sombre -->
-    <div class="bg-dark col-md-4">
+    <!-- bg-dark pour mettre l'arrière plan en gris sombre, pb-4 pour mettre du padding-bottom lorsque la page s'affiche en format mobile -->
+    <div class="bg-dark col-md-4 pb-4">
       <!-- row et mx-auto pour centrer l'élément avec rounded-circle pour arrondir l'image -->
       <img class="row mx-auto rounded-circle p-5" src="http://fakeimg.pl/150/" alt="fakeimage">
       <!-- text-left pour aligner le texte sur la gauche et text-light et text-bold pour mettre en plan et en gras, p-3 pour mettre du padding -->
@@ -23,9 +23,12 @@
         orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat.
         Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
       </p>
-      <!-- btn pour mettre en forme le bouton et btn-success et btn-danger pour mettre le fond approprié -->
-      <button class="btn btn-success justify-content-around" type="button">Oui</button>
-      <button class="btn btn-danger justify-content-around" type="button">Non</button>
+      <!-- Pour permettre au bouton d'être espacé autour et entre -->
+      <div class="d-flex justify-content-around">
+        <!-- btn pour mettre en forme le bouton et btn-success et btn-danger pour mettre le fond approprié -->
+        <button class="btn btn-success" type="button">Oui</button>
+        <button class="btn btn-danger" type="button">Non</button>
+      </div>
     </div>
 
     <!-- card pour mettre les éléments dans un conteneur flexible et extensible -->
